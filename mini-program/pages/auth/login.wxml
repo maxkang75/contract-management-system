@@ -1,0 +1,39 @@
+<view class="container">
+  <view class="login-box">
+    <view class="title">合同管理系统</view>
+    <view class="subtitle">登录</view>
+
+    <view class="form">
+      <view class="form-item">
+        <input
+          type="number"
+          placeholder="请输入手机号"
+          bindinput="onPhoneInput"
+          value="{{phone}}"
+          class="input"
+        />
+      </view>
+
+      <view class="form-item">
+        <input
+          type="password"
+          placeholder="请输入密码"
+          bindinput="onPasswordInput"
+          value="{{password}}"
+          class="input"
+        />
+      </view>
+
+      <view class="tip">示例账号: 13800138000 密码: 123456</view>
+
+      <button
+        class="login-btn"
+        bindtap="onLogin"
+        loading="{{loading}}"
+        disabled="{{loading}}"
+      >
+        登录
+      </button>
+    </view>
+  </view>
+</view>

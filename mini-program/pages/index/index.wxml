@@ -1,0 +1,47 @@
+<view class="container">
+  <view class="header">
+    <view class="greeting">欢迎使用</view>
+    <view class="title">合同管理系统</view>
+  </view>
+
+  <view class="quick-links">
+    <navigator url="/pages/contracts/list" class="link-item">
+      <view class="icon">📄</view>
+      <view class="text">我的合同</view>
+    </navigator>
+    <navigator url="/pages/projects/list" class="link-item">
+      <view class="icon">📊</view>
+      <view class="text">项目进度</view>
+    </navigator>
+    <navigator url="/pages/payments/list" class="link-item">
+      <view class="icon">💰</view>
+      <view class="text">请款申请</view>
+    </navigator>
+    <navigator url="/pages/dashboard/index" class="link-item">
+      <view class="icon">📈</view>
+      <view class="text">数据看板</view>
+    </navigator>
+  </view>
+
+  <view class="summary">
+    <view class="summary-title">概览</view>
+    <view class="summary-items">
+      <view class="item">
+        <view class="label">进行中的合同</view>
+        <view class="value">{{summary.active_contracts}}</view>
+      </view>
+      <view class="item">
+        <view class="label">进行中的项目</view>
+        <view class="value">{{summary.in_progress_projects}}</view>
+      </view>
+      <view class="item">
+        <view class="label">应收款</view>
+        <view class="value">¥{{summary.receivable}}</view>
+      </view>
+      <view class="item">
+        <view class="label">应付款</view>
+        <view class="value">¥{{summary.payable}}</view>
+      </view>
+    </view>
+  </view>
+</view>

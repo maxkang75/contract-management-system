@@ -1,0 +1,60 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/auth/login",
+    "pages/contracts/list",
+    "pages/contracts/detail",
+    "pages/projects/list",
+    "pages/projects/detail",
+    "pages/payments/list",
+    "pages/payments/submit",
+    "pages/dashboard/index",
+    "pages/my/profile"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "合同管理系统",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#999999",
+    "selectedColor": "#1E90FF",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "assets/icons/home.png",
+        "selectedIconPath": "assets/icons/home_selected.png"
+      },
+      {
+        "pagePath": "pages/contracts/list",
+        "text": "合同",
+        "iconPath": "assets/icons/contract.png",
+        "selectedIconPath": "assets/icons/contract_selected.png"
+      },
+      {
+        "pagePath": "pages/projects/list",
+        "text": "项目",
+        "iconPath": "assets/icons/project.png",
+        "selectedIconPath": "assets/icons/project_selected.png"
+      },
+      {
+        "pagePath": "pages/dashboard/index",
+        "text": "数据",
+        "iconPath": "assets/icons/dashboard.png",
+        "selectedIconPath": "assets/icons/dashboard_selected.png"
+      },
+      {
+        "pagePath": "pages/my/profile",
+        "text": "我的",
+        "iconPath": "assets/icons/profile.png",
+        "selectedIconPath": "assets/icons/profile_selected.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

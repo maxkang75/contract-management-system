@@ -1,0 +1,50 @@
+{
+  "name": "contract-management-backend",
+  "version": "1.0.0",
+  "description": "Contract Management System Backend",
+  "main": "dist/app.js",
+  "scripts": {
+    "dev": "ts-node-dev --respawn --transpile-only src/app.ts",
+    "build": "tsc",
+    "start": "node dist/app.js",
+    "migrate": "ts-node src/scripts/migrate.ts",
+    "seed": "ts-node src/scripts/seed.ts",
+    "lint": "eslint src --ext .ts",
+    "format": "prettier --write \"src/**/*.ts\""
+  },
+  "keywords": [
+    "contract",
+    "management",
+    "nodejs",
+    "typescript"
+  ],
+  "author": "maxkang75",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "pg": "^8.10.0",
+    "redis": "^4.6.7",
+    "jsonwebtoken": "^9.0.2",
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.3.1",
+    "cors": "^2.8.5",
+    "multer": "^1.4.5-lts.1",
+    "axios": "^1.5.0",
+    "uuid": "^9.0.0",
+    "date-fns": "^2.30.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.17",
+    "@types/node": "^20.5.0",
+    "@types/jsonwebtoken": "^9.0.3",
+    "@types/bcryptjs": "^2.4.2",
+    "@types/multer": "^1.4.7",
+    "typescript": "^5.1.6",
+    "ts-node": "^10.9.1",
+    "ts-node-dev": "^2.0.0",
+    "eslint": "^8.48.0",
+    "@typescript-eslint/eslint-plugin": "^6.5.0",
+    "@typescript-eslint/parser": "^6.5.0",
+    "prettier": "^3.0.3"
+  }
+}

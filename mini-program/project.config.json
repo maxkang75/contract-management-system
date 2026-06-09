@@ -1,0 +1,26 @@
+{
+  "miniprogramRoot": ".",
+  "projectname": "contract-management",
+  "description": "合同管理系统微信小程序",
+  "appid": "YOUR_APPID_HERE",
+  "setting": {
+    "urlCheck": true,
+    "es6": true,
+    "postcss": true,
+    "minified": true,
+    "newFeature": true,
+    "coverView": true,
+    "autoAudits": false,
+    "checkInvalidKey": true,
+    "checkSiteMap": true,
+    "uploadWithSourceMap": true
+  },
+  "compileType": "miniprogram",
+  "libVersion": "2.18.1",
+  "srcMiniprogramRoot": "miniprogram/",
+  "packOptions": {
+    "ignore": [],
+    "include": []
+  },
+  "condition": {}
+}
